@@ -1,0 +1,26 @@
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <!-- 可选子元素，按照要求添加或删除 -->
+    <properties resource="database.properties"/>
+
+    <settings>
+        <!-- MyBatis设置 -->
+        <setting name="cacheEnabled" value="true"/>
+        <!-- 其他设置项 -->
+    </settings>
+
+    <typeAliases>
+        <!-- 别名配置 -->
+        <package name="com.example.model"/>
+    </typeAliases>
+
+    <!-- 其他可选子元素 -->
+
+    <mappers>
+        <!-- 映射器配置 -->
+        <mapper resource="UserMapper.xml"/>
+    </mappers>
+</configuration>
